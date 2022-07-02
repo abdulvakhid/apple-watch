@@ -1,0 +1,507 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+    --font-family: 'Roboto', "Arial", sans-serif;
+    --main-font-weight: 400;
+}
+
+
+@font-face {
+    font-family: 'Roboto'"Arial"sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-700.woff') format('woff');
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: var(--main-font-weight);
+    margin: 0;
+    padding: 0;
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.site-header {
+    padding-top: 36px;
+}
+
+.site-header__header-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.content__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.content__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.content__item {
+    margin-right: 30px;
+}
+
+.content__item:nth-child(4) {
+    margin-right: 40px;
+}
+
+.content__link {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--main-font-weight);
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #333333;
+}
+
+
+.content__input {
+    padding-bottom: 10px;
+    border: transparent;
+    border-bottom: 1px solid #333333;
+    -webkit-transform: rotate(0.16deg);
+        -ms-transform: rotate(0.16deg);
+            transform: rotate(0.16deg);
+}
+
+input::-webkit-input-placeholder {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--main-font-weight);
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #666666;
+
+}
+
+input::-moz-placeholder {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--main-font-weight);
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #666666;
+
+}
+
+input:-ms-input-placeholder {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--main-font-weight);
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #666666;
+
+}
+
+input::-ms-input-placeholder {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--main-font-weight);
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #666666;
+
+}
+
+input::placeholder {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--main-font-weight);
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #666666;
+
+}
+
+
+
+
+
+
+/* hero section  */
+
+
+.hero {
+    padding-top: 170px;
+    padding-bottom: 185px;
+    border-bottom: 2px solid #DDDDDD;
+
+}
+
+
+
+
+.hero-box__content {
+    width: 500px;
+    position: relative;
+}
+
+.hero-box__content::after {
+    content: "";
+    background-image: url("../images/intro-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 587px;
+    height: 565px;
+    position: absolute;
+    right: -912px;
+    top: -102px;
+}
+
+.hero-box__topic {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.hero-box__text {
+    margin: 0;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--main-font-weight);
+    font-size: 16px;
+    line-height: 150%;
+    color: #777777;
+    border-left: 3px solid #888888;
+}
+
+
+.hero-box__link {
+    padding: 12px 38px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #EA625C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* info part begin  */
+
+
+.info {
+    padding: 70px 0;
+}
+
+.info__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* justify-content: space-between; */
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+
+.info__item {
+    width: 280px;
+    margin-right: 80px;
+}
+
+
+.info__item:nth-child(3) {
+    margin-right: 0;
+}
+
+.info__topic {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.info__link {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.info__text {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--main-font-weight);
+    font-size: 15px;
+    line-height: 160%;
+    color: #333333;
+    opacity: 0.8;
+}
+
+.line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.lines {
+    margin-right: 10px;
+    width: 8px;
+    height: 8px;
+    background-color: #DDDDDD;
+}
+
+.lines:nth-child(3) {
+    margin-right: 0;
+}
+
+
+.info__learn-more {
+    width: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.liner {
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background-color: #EA625C;
+}
+
+.more__link {
+    padding-left: 10px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #EA625C;
+}
+
+
+
+
+
+
+/* nike part begin  */
+
+
+
+.nike-section {
+    padding: 176px 0;
+}
+
+.nike {
+    width: 500px;
+    position: relative;
+}
+
+.nike::after {
+    content: "";
+    background-image: url("../images/watch-in-hand.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    right: -504px;
+    top: -101px;
+}
+
+
+.nike__topic {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.nike__topic__link {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.nike__text {
+    margin: 0;
+    padding-left: 40px;
+    margin-bottom: 40px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--main-font-weight);
+    font-size: 16px;
+    line-height: 150%;
+    color: #777777;
+    border-left: 3px solid #888888;
+}
+
+
+.nike__link {
+    padding: 12px 90px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #EA625C;
+}
+
+
+
+/* runners part begin  */
+
+
+.runners {
+    padding: 240px 0;
+}
+
+.runners {
+    width: 100%;
+    background-image: url("../images/runners\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.runners__content {
+    width: 500px;
+    margin-left: auto;
+    padding-right: 120px;
+}
+
+.runners__topic {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.runners__text {
+    margin: 0;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--main-font-weight);
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    border-left: 3px solid #FFFFFF;
+}
+
+
+
+.runners__link {
+    padding: 12px 46px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    background-color: #EA625C;
+}
