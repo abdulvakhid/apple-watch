@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
     --font-family: 'Roboto', "Arial", sans-serif;
     --main-font-weight: 400;
@@ -111,6 +118,7 @@ ul {
 }
 
 .content__link {
+    padding-bottom: 10px;
     font-family: var(--font-family);
     font-style: normal;
     font-weight: var(--main-font-weight);
@@ -118,8 +126,12 @@ ul {
     line-height: 150%;
     text-align: center;
     color: #333333;
+    border-bottom: 1px solid transparent;;
 }
 
+.content__link:hover{
+border-bottom: 3px solid #333333;;
+}
 
 .content__input {
     padding-bottom: 10px;
